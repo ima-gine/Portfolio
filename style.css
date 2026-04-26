@@ -195,12 +195,13 @@ h1 {
     letter-spacing: 0.5px;
 }
 
-p.lead {
+p.
+[26/04/2026 23:54] •IMÀ~ĞÏŅÉ•: lead {
     margin: 0;
     color: var(--muted);
     font-size: 13px;
 }
- 
+
 nav {
     display: flex;
     gap: 8px;
@@ -276,7 +277,6 @@ nav {
     transition: var(--transition);
     position: relative;
 }
-
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -290,7 +290,6 @@ nav {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Hero Section */
 .hero {
     margin-bottom: 40px;
 }
@@ -326,8 +325,6 @@ nav {
     font-size: 15px;
     line-height: 1.7;
 }
-
-/* Hero Stats */
 .hero-stats {
     display: flex;
     gap: 24px;
@@ -366,7 +363,6 @@ nav {
     margin-top: 4px;
 }
 
-/* CTA Row */
 .cta-row {
     display: flex;
     gap: 12px;
@@ -374,7 +370,6 @@ nav {
     flex-wrap: wrap;
 }
 
-/* Skills Section */
 .skills-section {
     margin-bottom: 40px;
 }
@@ -404,7 +399,7 @@ nav {
 .skill-category {
     background: var(--card);
     border: 1px solid var(--glass-border);
-    border-radius: var(--radius);
+[26/04/2026 23:54] •IMÀ~ĞÏŅÉ•: border-radius: var(--radius);
     padding: 24px;
     transition: var(--transition);
 }
@@ -427,7 +422,6 @@ nav {
     font-size: 1.2rem;
 }
 
-/* Chips */
 .chips {
     display: flex;
     flex-wrap: wrap;
@@ -451,7 +445,6 @@ nav {
     color: var(--accent1);
 }
 
-/* Projects Section */
 .projects-section {
     margin-bottom: 40px;
 }
@@ -594,7 +587,6 @@ nav {
     color: var(--muted-light);
 }
 
-/* Analytics Section */
 .analytics-section {
     margin-bottom: 40px;
 }
@@ -631,13 +623,12 @@ nav {
     max-height: 200px;
 }
 
-/* Contact Section */
 .contact-section {
     margin-bottom: 40px;
 }
 
 .contact-list {
-    display: grid;
+[26/04/2026 23:54] •IMÀ~ĞÏŅÉ•: display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
     margin: 20px 0;
@@ -689,7 +680,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 32px 0;
@@ -731,7 +721,6 @@ footer p {
     transform: translateY(-4px);
 }
 
-/* Education Section */
 .education-section {
     margin-bottom: 40px;
 }
@@ -811,9 +800,7 @@ footer p {
 .port-item:nth-child(5) { animation-delay: 0.5s; }
 .port-item:nth-child(6) { animation-delay: 0.6s; }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    /* Hide desktop navigation, show mobile menu button */
     nav {
         display: none;
         position: fixed;
@@ -839,7 +826,7 @@ footer p {
 
     @keyframes slideDown {
         from {
-            opacity: 0;
+[26/04/2026 23:54] •IMÀ~ĞÏŅÉ•: opacity: 0;
             transform: translateY(-10px);
         }
         to {
@@ -848,7 +835,6 @@ footer p {
         }
     }
 
-    /* Add padding to header to prevent content going under fixed menu button */
     header {
         padding-right: 60px;
     }
