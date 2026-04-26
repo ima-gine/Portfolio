@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKINYEMI EMMANUEL | Frontend Developer & Data Analyst</title>
+    <meta name="description" content="Portfolio of Akinyemi Emmanuel — Frontend Developer & Data Analyst.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loader-logo">AE</div>
+            <h1 class="welcome-text">Welcome to My Portfolio</h1>
+            <p class="loading-text">Loading amazing content...</p>
+            <div class="loader">
+                <div class="loader-circle"></div>
+                <div class="loader-circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="portfolio-content">
+        <div class="wrap">
+            <!-- Header -->
+            <header>
+                <div class="brand">
+                    <img src="images/image1.jpg" alt="Akinyemi Emmanuel" class="profile-img">
+                    <div>
+                        <h1>AKINYEMI EMMANUEL</h1>
+                        <p class="lead">Frontend Developer | Data Analyst</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        
+                <nav aria-label="primary navigation">
+                    <a class="btn" href="#about">About</a>
+                    <a class="btn" href="#skills">Skills</a>
+                    <a class="btn" href="#projects">Projects</a>
+                    <a class="btn" href="#analytics">Analytics</a>
+                    <a class="btn" href="#contact">Contact</a>
+                    <a class="btn primary" href="#contact">Let's Talk</a>
+                </nav>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="hero" aria-labelledby="intro">
+                <div class="card about" id="about">
+                    <h2 id="intro">Hi, I'm <span class="gradient-text">Akinyemi Emmanuel</span></h2>
+                    <p class="meta">I build accessible, performant web interfaces and transform raw data into actionable insights. With a foundation in graphics design, I blend visual aesthetics with clean code to ship interfaces that look great and perform well.</p>
+        
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="7">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">% Client Satisfaction</div>
+                        </div>
+                    </div>
+        
+                    <div class="cta-row">
+                        <a class="btn primary" href="#projects">View My Work</a>
+                        <a class="btn" href="#contact">Get In Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section" id="skills">
+                <div class="section-header">
+                    <h2>Skills & Technologies</h2>
+                    <p class="section-subtitle">Tools I use to bring ideas to life</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                        <div class="chips">
+                            <span class="chip">HTML5</span>
+                            <span class="chip">CSS3</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">React</span>
+                            <span class="chip">TypeScript</span>
+                            <span class="chip">Responsive Design</span>
+                            <span class="chip">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
+                        <div class="chips">
+                            <span class="chip">Python</span>
+                            <span class="chip">Pandas</span>
+                            <span class="chip">Excel</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip">Matplotlib</span>
+                            <span class="chip">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="projects">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p class="section-subtitle">A showcase of my frontend and data analysis work</p>
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="data">Data Analytics</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <!-- Frontend Projects -->
+                    <article class="port-item" data-category="frontend">
+                        <div class="port-thumb">
+                            <img src="images/artgallery.PNG" alt="Art Gallery" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://art-gallery-qsq9.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>Interactive Art Gallery</h3>
+                            <p>Gallery with filter system, smooth transitions and grid layout for artwork display.</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span><span>CSS Grid</span><span>Filter System</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="frontend">
+                        <div class="port-thumb">
+                            <img src="images/De-right.PNG" alt="De Right Restaurant" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://restaurant-ten-pink.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>De Right Restaurant</h3>
+                            <p>Interactive restaurant website with menu, reservations and responsive design.</p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="frontend">
+                        <div class="port-thumb">
+                            <img src="images/snazzy.PNG" alt="Snazzy Foods" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://snazzy-foods.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>Snazzy Foods</h3>
+                            <p>Food delivery platform with menu browsing, cart functionality and smooth UI.</p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="frontend">
+                        <div class="port-thumb">
+                            <img src="images/tofit.PNG" alt="To-Fit Fashion" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://to-fit-fashion.vercel.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>To-Fit Fashion</h3>
+                            <p>E-commerce fashion platform with product showcase and modern UI design.</p>
+                            <div class="project-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Data Analytics Projects -->
+                    <article class="port-item" data-category="data">
+                        <div class="port-thumb">
+                            <img src="images/zomato.PNG" alt="Zomato EDA" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://github.com/ima-gine/Zomato_EDA" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>Zomato Restaurant EDA</h3>
+                            <p>Exploratory Data Analysis on Zomato restaurant dataset to understand ratings, cuisines, and country patterns.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Pandas</span><span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="data">
+                        <div class="port-thumb">
+                            <img src="images/Titanic.PNG" alt="Titanic Analysis" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://github.com/ima-gine/Titanic_EDA" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>Titanic Survival Analysis</h3>
+                            <p>Data analysis of Titanic dataset to predict survival rates based on passenger features.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Pandas</span><span>Seaborn</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="port-item" data-category="data">
+                        <div class="port-thumb">
+                            <img src="images/sales.PNG" alt="Sales Analysis" class="port-img">
+                            <div class="port-overlay">
+                                <a href="https://github.com/ima-gine/PandasSalesAnalysis" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="port-info">
+                            <h3>Pandas Sales Analysis</h3>
+                            <p>Comprehensive sales data analysis using Python Pandas with visualizations and insights.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Pandas</span><span>Excel</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Analytics Section with Chart.js - Zomato Data -->
+            <section class="analytics-section" id="analytics">
+                <div class="section-header">
+                    <h2>Zomato Data Analysis</h2>
+                    <p class="section-subtitle">Insights from my Zomato restaurant dataset EDA project</p>
+                </div>
+                
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h3>Country-wise Transactions</h3>
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Rating Distribution</h3>
+                        <canvas id="projectsChart"></canvas>
+                    </div>
+                    <div class="chart-card wide">
+                        <h3>Top Cuisines</h3>
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Service Type Analysis</h3>
+                        <canvas id="proficiencyChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="education-section" id="education">
+                <div class="section-header">
+                    <h2>Education & Certifications</h2>
+                    <p class="section-subtitle">My academic background and professional courses</p>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h3>B.Sc. Metallurgical and Materials Engineering</h3>
+                            <p class="edu-school">Federal University of Technology Akure (FUTA)</p>
+                            <p class="edu-year">2024</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="edu-content">
+                            <h3>Responsive Web Design</h3>
+                            <p class="edu-school">freeCodeCamp</p>
+                            <p class="edu-year">Certification</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact-section" id="contact">
+                <div class="card" aria-labelledby="contact-heading">
+                    <h3 id="contact-heading">Get In Touch</h3>
+                    <p class="meta">I'm available for freelance projects and collaborations. Let's create something amazing together!</p>
+        
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:nuel15420@gmail.com">nuel15420@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+2348124493781">08124493781</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Nigeria</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>Federal University of Technology Akure, Metallurgical and Materials Engineering (2024)</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cta-row">
+                        <a class="btn primary" href="mailto:nuel15420@gmail.com"><i class="fas fa-paper-plane"></i> Email Me</a>
+                        <a class="btn" href="#projects">View Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2026 Akinyemi Emmanuel.</p>
+                <div class="social-links">
+                    <a href="https://github.com/ima-gine" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/emmanuel-akinyemi-5a3155389" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/emma1_nuel" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/2348124493781" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
