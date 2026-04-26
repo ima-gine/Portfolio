@@ -1,8 +1,6 @@
 ### Portfolio
 
-A modern, responsive personal portfolio website for **Akinyemi Emmanuel** — Frontend Developer & Data Analyst.
-
-![Portfolio Preview](https://via.placeholder.com/1200x600/0a0e17/22d3ee?text=Imagine+Portfolio)
+A modern, responsive personal portfolio website for a Frontend Developer & Data Analyst.
 
 ## Features
 
