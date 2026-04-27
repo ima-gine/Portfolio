@@ -1,9 +1,5 @@
-// ========================================
-// Imagine Portfolio - Interactive Script
-// ========================================
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize all functions
+
     initLoadingScreen();
     initMobileMenu();
     initProjectFilter();
@@ -12,27 +8,19 @@ document.addEventListener('DOMContentLoaded', function() {
     initChartJS();
 });
 
-// ========================================
-// Loading Screen
-// ========================================
 function initLoadingScreen() {
     const loadingScreen = document.getElementById('loading-screen');
     const portfolioContent = document.getElementById('portfolio-content');
     
-    // Simulate loading time
     setTimeout(() => {
         loadingScreen.classList.add('hidden');
         portfolioContent.classList.add('visible');
-        
-        // Initialize counter animation after content is visible
+
         initCounterAnimation();
         initChartJS();
     }, 2000);
 }
 
-// ========================================
-// Mobile Menu Toggle
-// ========================================
 function initMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
@@ -44,8 +32,7 @@ function initMobileMenu() {
             const isExpanded = nav.classList.contains('active');
             menuToggle.setAttribute('aria-expanded', isExpanded);
         });
-        
-        // Close menu when clicking outside
+
         document.addEventListener('click', (e) => {
             if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
                 nav.classList.remove('active');
@@ -53,8 +40,7 @@ function initMobileMenu() {
                 menuToggle.setAttribute('aria-expanded', 'false');
             }
         });
-        
-        // Close menu when pressing Escape
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 nav.classList.remove('active');
@@ -65,18 +51,15 @@ function initMobileMenu() {
     }
 }
 
-// ========================================
-// Project Filter
-// ========================================
 function initProjectFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.port-item');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all buttons
+
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
+        
             button.classList.add('active');
             
             const filter = button.getAttribute('data-filter');
@@ -95,16 +78,13 @@ function initProjectFilter() {
     });
 }
 
-// ========================================
-// Counter Animation
-// ========================================
 function initCounterAnimation() {
     const counters = document.querySelectorAll('.stat-number');
     
     counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000; // 2 seconds
-        const increment = target / (duration / 16); // 60fps
+        const duration = 2000; 
+        const increment = target / (duration / 16);
         let current = 0;
         
         const updateCounter = () => {
@@ -116,8 +96,7 @@ function initCounterAnimation() {
                 counter.textContent = target;
             }
         };
-        
-        // Start animation when element is in view
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -131,9 +110,6 @@ function initCounterAnimation() {
     });
 }
 
-// ========================================
-// Scroll Animations
-// ========================================
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -148,8 +124,7 @@ function initScrollAnimations() {
             }
         });
     }, observerOptions);
-    
-    // Observe all sections
+
     document.querySelectorAll('section').forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
@@ -158,19 +133,13 @@ function initScrollAnimations() {
     });
 }
 
-// ========================================
-// Chart.js Integration
-// ========================================
 function initChartJS() {
-    // Only initialize if charts exist
+
     if (!document.getElementById('skillsChart')) return;
     
     Chart.defaults.color = '#94a3b8';
     Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
-    
-    // Zomato Data Analysis Charts
-    
-    // Country-wise Transactions (Bar Chart)
+
     const countryCtx = document.getElementById('skillsChart').getContext('2d');
     new Chart(countryCtx, {
         type: 'bar',
@@ -213,8 +182,7 @@ function initChartJS() {
             }
         }
     });
-    
-    // Rating Distribution (Doughnut Chart)
+
     const ratingCtx = document.getElementById('projectsChart').getContext('2d');
     new Chart(ratingCtx, {
         type: 'doughnut',
@@ -250,8 +218,7 @@ function initChartJS() {
             cutout: '55%'
         }
     });
-    
-    // Top Cuisines (Horizontal Bar Chart)
+
     const cuisineCtx = document.getElementById('activityChart').getContext('2d');
     new Chart(cuisineCtx, {
         type: 'bar',
@@ -290,8 +257,7 @@ function initChartJS() {
             }
         }
     });
-    
-    // Delivery Analysis (Pie Chart)
+
     const deliveryCtx = document.getElementById('proficiencyChart').getContext('2d');
     new Chart(deliveryCtx, {
         type: 'pie',
@@ -325,9 +291,6 @@ function initChartJS() {
     });
 }
 
-// ========================================
-// Smooth Scroll for Navigation
-// ========================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -337,8 +300,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
-            
-            // Close mobile menu if open
+ 
             const nav = document.querySelector('nav');
             const menuToggle = document.querySelector('.menu-toggle');
             if (nav && nav.classList.contains('active')) {
@@ -349,9 +311,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ========================================
-// Navbar Background on Scroll
-// ========================================
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
